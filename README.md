@@ -1,5 +1,7 @@
 # mediapipe-node
 
+<img src="Hand-Face-Example.jpg" alt="Hand-Face Example" style="width:60%;" />
+
 This project integrates MediaPipe Solutions with Node.js and Express for real-time computer vision tasks. It showcases examples of image segmentation, hand and face detection, and pose detection, with a combined example for all three types of landmark detection. 
 
 Utilizing MediaPipe's client-side JavaScript APIs, the project performs video processing directly in the browser, minimizing server-side computation. Additionally, it features logging for hand and face gestures, tracking interactions both in the console and a text file in the server logs directory.
