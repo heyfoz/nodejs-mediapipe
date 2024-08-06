@@ -12,6 +12,7 @@ Utilizing MediaPipe's client-side JavaScript APIs, the project performs video pr
 mediapipe-node/
 ├── server.js
 ├── package.json
+├── package-lock.json
 ├── public/
 │   ├── css/
 │   │   ├── full_detection_styles.css
@@ -33,6 +34,7 @@ mediapipe-node/
 │   │   └── pose_detection.js
 │   └── json/
 │       ├── blendshape_map.json
+│       ├── hand_map.json
 │       ├── gesture_map.json
 │       └── pose_map.json
 ├── models/
