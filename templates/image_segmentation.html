@@ -1,0 +1,34 @@
+<!-- Image Segmentation-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Video Segmentation</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="../public/css/image_segmentation_styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"></head>
+<body>
+    <div class="container">
+        <h1>Real-Time Video Segmentation</h1>
+
+        <!-- Centered section above video frame -->
+        <section id="cta-prompt-div">
+            <p id="cta-prompt">Press <b>Start Segmentation</b> below to initiate the webcam video segmentation.</p>
+        </section>
+
+        <button id="webcamButton">START SEGMENTATION</button>
+        <div class="video-container">
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="masked-container">
+            <canvas id="maskedCanvas"></canvas>
+        </div>
+    </div>
+    <script src="../public/js/image_segmentation.js" type="module"></script>
+</body>
+</html>

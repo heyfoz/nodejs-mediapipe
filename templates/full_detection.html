@@ -1,0 +1,48 @@
+<!-- Hand & Face Detection-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Hand, Face, and Pose Detection</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="../public/css/hand_face_detection_styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+<body>
+  <h1>Real-Time Hand, Face, and Pose Detection</h1>
+  <div id="liveView">
+    <video id="webcam" autoplay playsinline></video>
+    <canvas id="output_canvas"></canvas>
+    <div id="buttonContainer">
+      <button id="webcamButton" class="mdc-button mdc-button--raised" tabindex="0">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">START DETECTION</span>
+      </button>
+    </div>
+    <table id="full_gesture_table">
+      <thead>
+        <tr>
+          <th>Hand Gesture</th>
+          <th>Confidence</th>
+          <th>Hand Side</th>
+          <th>Hand Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="gesture_output">Not Detected</td>
+          <td id="confidence_output">100.0%</td>
+          <td id="handedness_output">Not Detected</td>
+          <td id="hand_count_output">0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="../public/js/full_detection.js" type="module"></script>
+</body>
+</html>

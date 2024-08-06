@@ -1,0 +1,107 @@
+/* Pose Detection Styles */
+:root {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    /* Button style variables */
+    --button-background-color: #1f1f1f; /* Original button background color */
+    --button-text-color: #000000; /* Original text color (black) */
+    --button-hover-background-color: #4caf50; /* Green color on hover */
+    --button-hover-text-color: black; /* White text color on hover */
+    --dark-border-color: #34495e;
+    /* Table style variables */
+    --border-color: #e0e0e0;
+    --header-background-color: #333;
+    --row-background-color: #222;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300; /* Set default font weight */
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color); /* Dark background */
+    color: var(--text-color); /* Light text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center align text in the body */
+}
+/* Container for video and masked video */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+    width: 720px;
+    height: 800px;
+}
+
+/* Styling for title */
+h1 {
+    margin: 20px 0;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+/* Section styling */
+#cta-prompt {
+    margin: 20px 0;
+}
+
+/* Button styling */
+button {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px 0;
+    z-index: 1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover-background-color);
+    color: var(--button-hover-text-color);
+}
+
+/* Container for video and masked video */
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 20px 0;
+    position: relative;
+    width: 720px;
+    height: auto; /* Adjusted height to auto */
+}
+
+#liveView {
+    max-width: 720px;
+    position: relative;
+}
+
+#webcam {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+#output_canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Reset default margin and padding for paragraphs */
+p {
+    margin: 0;
+    padding: 0;
+}

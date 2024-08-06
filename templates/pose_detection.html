@@ -1,0 +1,35 @@
+<!-- Pose Detection -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pose Detection</title>
+    <!-- Styles -->
+    <link href="../public/css/pose_detection_styles.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Real-Time Pose Detection</h1>
+        <!-- Centered section above video frame -->
+        <section id="cta-prompt-div">
+            <p id="cta-prompt">Press <b>Start Detection</b> below to initiate the webcam pose detection.</p>
+        </section>
+        
+        <button id="webcamButton">START DETECTION</button>
+
+        <!-- Video container -->
+        <div id="liveView" class="video-container">
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="output_canvas"></canvas>
+        </div>
+    </div>
+
+    <script src="../public/js/pose_detection.js" type="module"></script>
+</body>
+</html>

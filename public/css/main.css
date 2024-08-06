@@ -1,0 +1,173 @@
+/* Global Variables */
+:root {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --button-background-color: #1f1f1f;
+    --button-text-color: #000000;
+    --button-hover-background-color: #4caf50;
+    --button-hover-text-color: black;
+    --border-color: #e0e0e0;
+    --header-background-color: #333;
+    --row-background-color: #222;
+    --link-color: #22baed;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    margin-top: 20px;
+}
+
+/* Styling for title */
+h1 {
+    margin: 20px 0;
+    font-size: 32px;
+    font-weight: 300; /* Set default font weight */
+}
+
+h2 {
+    font-weight: 300;
+}
+
+a {
+    color: var(--link-color);
+}
+
+/* Button Styling */
+button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover-background-color);
+    color: var(--button-hover-text-color);
+}
+
+/* Container for video and masked video */
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 720px;
+    height: 480px;
+    position: relative;
+}
+
+#footer {
+    padding-top: 16px;
+}
+
+/* Styling for webcam */
+#webcam {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    object-fit: cover;
+    display: none;
+}
+
+/* Styling for canvas */
+#output_canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+/* Styling for hand and face detection */
+#liveView {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+
+#webcam {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+#output_canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#buttonContainer {
+    margin-top: 20px;
+}
+
+.mdc-button {
+    margin: 0;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: 1px solid var(--border-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mdc-button:hover {
+    background-color: var(--button-hover-background-color);
+    color: var(--button-hover-text-color);
+}
+
+/* Styling for face detection output */
+#face_output {
+    margin-top: 20px;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    text-align: center;
+    font-weight: 300;
+}
+
+th {
+    background-color: var(--header-background-color);
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: var(--row-background-color);
+}
