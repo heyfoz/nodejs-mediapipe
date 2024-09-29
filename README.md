@@ -59,7 +59,7 @@ mediapipe-node/
 2. **Clone the Repository**
 
     ```sh
-    git clone https://github.com/ffm5113/mediapipe-node.git
+    git clone https://github.com/heyfoz/nodejs-mediapipe.git
     cd mediapipe-node
     ```
 
