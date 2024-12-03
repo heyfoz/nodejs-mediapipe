@@ -1,4 +1,4 @@
-# mediapipe-node
+# nodejs-mediapipe
 
 <img src="Hand-Face-Example.jpg" alt="Hand-Face Example" />
 
